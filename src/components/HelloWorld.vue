@@ -9,8 +9,9 @@
           <div class="product-container">
             <div class="product-text">
               <br><br><br><br><br><br><br><br>
-              <p style="text-align: center;">This product is unavailable to show</p>
-              <div class="product-buttons">
+              <img src="../assets/sadFace.png" width="800px" height="350px" style="display: block; margin-left: 70px;">
+              <p style="position: absolute; top: 45%; left: 48%; transform: translate(-50%, -50%); text-align: center; color: #1E1E1E; padding: 0px; margin-left: 0px;">This product is unavailable to show</p>
+              <div class="product-buttons" style="position: absolute; top: 60%; left: 50%; transform: translateX(-50%);">
                 <button @click="getNextProduct" class="next-product-button">Next Product</button>
               </div>
             </div>
@@ -253,28 +254,40 @@
     margin-right: 10px; 
   }
   .blue-next-product-button {
-      background-color: #FFFF;
+    background-color: #FFFF;
+    font-weight: bold;
+    font-size: 15px;
     color: #002772;
     padding: 10px 0; 
     cursor: pointer;
-    border: 1px solid #002772;
+    border: 2px solid #002772;
     flex-grow: 1;
   }
   .pink-next-product-button {
-        background-color: #FFFF;
+    background-color: #FFFF;
+    font-weight: bold;
+    font-size: 15px;
     color: #720060;
     padding: 10px 0; 
     cursor: pointer;
-    border: 1px solid #720060;
+    border: 2px solid #720060;
     flex-grow: 1;
   }
   .next-product-button {
     background-color: #FFFF;
+    font-weight: bold;
+    font-size: 15px;
     color: #1E1E1E;
     padding: 10px 0; 
     cursor: pointer;
-    border: 1px solid #1E1E1E;
-    flex-grow: 1;
+    border: 2px solid #1E1E1E;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 500px;
+    height: 50px;
+    margin-left: 183px;
   }
   
   </style>
